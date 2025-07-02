@@ -50,6 +50,8 @@ function cleerform() {
   prodictcatigroyinput.value = null;
   prodictdetalsinput.value = null;
   prodictimginput.value = null;
+  phone.value=null;
+  
 }
 function displydata() {
   var cartona = "";
