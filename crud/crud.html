@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- ------end css style -->
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container bg-info p-4 rounded-4 my-4">
+                <h1 class="text-center">CURD SYSTEM</h1>
+              <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="prodict-name" placeholder="name@example.com">
+            <label for="prodict-name">enter the prodict name</label>
+            </div>
+            <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="prodict-price" placeholder="name@example.com">
+            <label for="prodict-price">enter the prodict price</label>
+            </div>
+            <div class="form-floating mb-3">
+            <input list="list" type="text" class="form-control" id="prodict-catigroy" placeholder="name@example.com">
+            <label for="prodict catigroy">prodict-catigroy</label>
+            <datalist id="list">
+                <option value="tv"></option>
+                <option value="phons"></option>
+                <option value="laptops"></option>
+                <option value="electroincs"></option>
+            </datalist>
+            </div>
+            <!-- try something -->
+            <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="phone-number" placeholder="name@example.com">
+            <label for="phone-number">phone number</label>
+            </div>
+         <!-- end -->
+            <div class="form-floating mb-3">
+            <textarea style="height: 100px;" list="list" type="text" class="form-control" id="prodict-detals" placeholder="name@example.com"></textarea>
+            <label for="prodict-detals">prodict detals....</label>
+            </div>
+            <div class="form-floating mb-3">
+            <input  type="file" class="form-control" id="prodict-img" placeholder="name@example.com">
+            <label for="prodict-img">prodict img</label>
+             <button onclick=addprodact() class="btn btn-primary btn-sm">add prodict</button>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <input onkeyup=searchData() id="serchinput" type="search" class="form-control w-50 mx-auto my-4"placeholder="serch by name...." >
+                <div class="row" id="rowdata">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
