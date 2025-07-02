@@ -35,7 +35,7 @@ function addprodact() {
     // img:`/images/${prodictimginput.files[0].name}`,
     img: prodictimginput.files[0]
       ? `images/${prodictimginput.files[0].name}`
-      : "images/p-1.jpg",
+      : "./crud/images/p-1.jpg",
       phone:phonviled,
   };
   prodactlist.push(prodact);
