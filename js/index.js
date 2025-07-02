@@ -80,7 +80,7 @@ function signRegister() {
     alert("Wrong password");
   } else {
     alert("Welcome " + foundUser.Name);
-    location.href = "../crud/crud.html";
+    location.href = "./crud/crud.html";
   }
 }
 
